@@ -19,7 +19,7 @@ This script tests the cart and payment pages of the website. It adds two product
 
 **Config.js**
 
-The config.js file is where the configuration settings for our Selenium WebDriver are stored. This file exports an object with the settings.
+The config.js file is where the configuration settings for our Selenium WebDriver are stored. This file exports an object with the settings. **Note that Chrome is set to working in headless mode by default**
 
 **Selectors.js**
 
