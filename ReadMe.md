@@ -1,6 +1,7 @@
 Skincare Shop Automated Testing
 
-This project contains automated test scripts for a hypothetical skincare online shop. The scripts are built with Selenium WebDriver and Node.js and are intended to test different parts of the application.
+This project contains automated test scripts for a hypothetical skincare online shop, specifically designed for automation testing practice - https://weathershopper.pythonanywhere.com/. Each page of the website contains "i" symbol next to the page header with a description of automation test task to code.
+The scripts provided below are built with Selenium WebDriver and Node.js and are intended to test different parts of the application.
 
 The test scripts are divided into four JavaScript files:
 
