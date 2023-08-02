@@ -76,7 +76,7 @@ async function cartPageTest() {
         let stripeFrame = await driver.findElement(By.xpath(selectors.cart.stripeIframe));
         await driver.switchTo().frame(stripeFrame);
 
-        // Fill out card details
+        // Fill out email and card details
         let emailAddress = await driver.findElement(By.xpath(selectors.payment.email));
         await emailAddress.sendKeys('example@gmail.com');
         let cardNumber = await driver.findElement(By.xpath(selectors.payment.cardNumber));
