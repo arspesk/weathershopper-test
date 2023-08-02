@@ -1,4 +1,5 @@
 Skincare Shop Automated Testing
+
 This project contains automated test scripts for a hypothetical skincare online shop. The scripts are built with Selenium WebDriver and Node.js and are intended to test different parts of the application.
 
 The test scripts are divided into four JavaScript files:
@@ -15,7 +16,19 @@ This script tests the moisturizer product page of the website. It fetches all th
 4. cartAndPaymentPagesTests.js
 This script tests the cart and payment pages of the website. It adds two products (one with 'spf-30' and one with 'spf-50') to the cart, verifies the items, and proceeds to payment. It fills out card details and submits the form, and then verifies if the payment was successful.
 
+Config.js
+
+The config.js file is where the configuration settings for our Selenium WebDriver are stored. This file exports an object with the settings.
+
+Selectors.js
+
+The selectors.js file contains the CSS and XPath selectors that our tests use to interact with the web application's elements. These selectors are organised into different categories based on the pages they represent.
+
+Navigation.js
+
+The navigation.js file contains functions that assist with navigation in the Weather Shopper application. This file leverages Selenium's WebDriver to interact with the web page.
 Prerequisites
+
 To run these scripts, make sure you have the following installed:
 
 Node.js and npm
