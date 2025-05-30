@@ -3,6 +3,7 @@ const chrome = require('selenium-webdriver/chrome');
 const config = require('../config.js');
 const selectors = require('../selectors');
 const { navigateToSunscreenShop } = require('../navigation.js');
+const assert = require('assert');
 
 // Chrome options setup
 let chromeOptions = new chrome.Options();
@@ -99,7 +100,7 @@ async function cartPageTest() {
         await driver.wait(until.urlContains('confirmation'), 10000);
         let header = await driver.findElement(By.tagName(selectors.confirmation.header));
         let headerText = await header.getText();
-        headerText === "PAYMENT SUCCESS" ? console.log("Payment was successful.") : console.log("Payment was not successful.");
+        assert.strictEqual(headerText, "PAYMENT SUCCESS");
 
     } catch (error) {
         console.error(error);
