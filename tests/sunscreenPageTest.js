@@ -60,7 +60,7 @@ async function sunscreenPageTest() {
 
         // Navigate to the cart
         let cartButton = await driver.findElement(By.xpath(selectors.productCard.cartButton));
-        await driver.wait(until.elementIsVisible(cartButton, 5000));
+        await driver.wait(until.elementIsVisible(cartButton), 5000);
         await cartButton.click();
         console.log('Navigated to the cart.');
 
