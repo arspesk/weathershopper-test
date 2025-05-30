@@ -21,7 +21,7 @@ driver.get(config.seleniumConfig.url);
 async function navigateToShop(type) {
     // type: 'moisturizer' or 'sunscreen'
     let button = await driver.findElement(By.xpath(selectors.landingPage[`${type}Button`]));
-    await driver.wait(until.elementIsVisible(button, 5000));
+    await driver.wait(until.elementIsVisible(button), 5000);
     await button.click();
     console.log(`Navigating to ${type} shop`);
 }
