@@ -28,6 +28,7 @@ The selectors.js file contains the CSS and XPath selectors that our tests use to
 **Navigation.js**
 
 The navigation.js file contains functions that assist with navigation in the Weather Shopper application. This file leverages Selenium's WebDriver to interact with the web page.
+
 Prerequisites
 
 To run these scripts, make sure you have the following installed:
